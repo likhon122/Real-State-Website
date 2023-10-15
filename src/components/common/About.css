@@ -7,13 +7,6 @@
   position: relative;
   z-index: -1;
 }
-
-/* <a href="https://ibb.co/Stk8v5c"><img src="https://i.ibb.co/VgFZBJx/home-Banner.jpg" alt="home-Banner" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/Zm6CNDZ/logo.png" alt="logo" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/L1CmV6x/logo-light.png" alt="logo-light" border="0"></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/L1CmV6x/logo-light.png" alt="logo-light" border="0"></a>
-<a href="https://ibb.co/7NZN3Yw"><img src="https://i.ibb.co/Z1F1QLn/pricing-Page-Image.jpg" alt="pricing-Page-Image" border="0"></a>
-<a href="https://ibb.co/nzVz4Yf"><img src="https://i.ibb.co/5BzBCSv/services-Page-Image.jpg" alt="services-Page-Image" border="0"></a> */
 .headerText::after {
   position: absolute;
   content: "";
