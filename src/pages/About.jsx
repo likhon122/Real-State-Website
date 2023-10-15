@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../components/common/About.css";
+import myImage from "../../public/Images/about/aboutPageStory.jpg";
 const About = () => {
   return (
     <div>
@@ -34,10 +35,7 @@ const About = () => {
           <button>More About Us</button>
         </div>
         <div className="leftSide">
-          <img
-            src="../../public/Images/about/aboutPageStory.jpg"
-            alt="About Image"
-          />
+          <img src={myImage} alt="About Image" />
         </div>
       </div>
     </div>

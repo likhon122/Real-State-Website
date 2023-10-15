@@ -33,7 +33,7 @@ export const navbar = [
 
 
 {/* <a href="https://ibb.co/cgxqRjk"><img src="" alt="about-Page-Image" border="0"></a>
-<a href="https://ibb.co/MD8Lksp"><img src="https://i.ibb.co/xSmQqDG/about-Page-Story.jpg" alt="about-Page-Story" border="0"></a> */}
+<a href="https://ibb.co/MD8Lksp"><img src="" alt="about-Page-Story" border="0"></a> */}
 
 export const featuredProperty = [
   {
