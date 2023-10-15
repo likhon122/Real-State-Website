@@ -32,6 +32,10 @@ export const navbar = [
 ];
 
 import featureImage1 from "../../public/Images/features/featuresImage1.png";
+import featureImage2 from "../../public/Images/features/featuresImage2.png";
+import featureImage3 from "../../public/Images/features/featuresImage3.png";
+import featureImage4 from "../../public/Images/features/featuresImage4.png";
+import featureImage5 from "../../public/Images/features/featuresImage5.png";
 export const featuredProperty = [
   {
     image: featureImage1,
@@ -39,30 +43,36 @@ export const featuredProperty = [
     propertyValid: "122 Property",
   },
   {
-    image: "public/Images/features/featuresImage2.png",
+    image: featureImage2,
     houseName: "House & Villa",
     propertyValid: "155 Property",
   },
   {
-    image: "public/Images/features/featuresImage3.png",
+    image: featureImage3,
     houseName: "Apartment",
     propertyValid: "300 Property",
   },
   {
-    image: "public/Images/features/featuresImage4.png",
+    image: featureImage4,
     houseName: "Office & Studio",
     propertyValid: "80 Property",
   },
   {
-    image: "public/Images/features/featuresImage5.png",
+    image: featureImage5,
     houseName: "Villa & Condo",
     propertyValid: "80 Property",
   },
 ];
 
+import cartImage1 from "../../public/Images/propertyList/cartImage1.png";
+import cartImage2 from "../../public/Images/propertyList/cartImage2.png";
+import cartImage3 from "../../public/Images/propertyList/cartImage3.png";
+import cartImage4 from "../../public/Images/propertyList/cartImage4.png";
+import cartImage5 from "../../public/Images/propertyList/cartImage5.png";
+import cartImage6 from "../../public/Images/propertyList/cartImage6.png";
 export const propertyList = [
   {
-    image: "../../public/Images/propertyList/cartImage1.png",
+    image: cartImage1,
     header: "For Rent",
     title: "Red Carpet Real Estate",
     location: "210 Zirak Road, Canada",
@@ -70,7 +80,7 @@ export const propertyList = [
     type: "Apartment",
   },
   {
-    image: "../../public/Images/propertyList/cartImage2.png",
+    image: cartImage2,
     header: "For Sale",
     title: "Fairmount Properties",
     location: "5698 Zirak Road, NewYork",
@@ -78,7 +88,7 @@ export const propertyList = [
     type: "Condos",
   },
   {
-    image: "../../public/Images/propertyList/cartImage3.png",
+    image: cartImage3,
     header: "For Rent",
     title: "The Real Estate Corner",
     location: "5624 Mooker Market, USA",
@@ -86,7 +96,7 @@ export const propertyList = [
     type: "Offices",
   },
   {
-    image: "../../public/Images/propertyList/cartImage4.png",
+    image: cartImage4,
     header: "For Sale",
     title: "Herringbone Realty",
     location: "5621 Liverpool, London",
@@ -94,7 +104,7 @@ export const propertyList = [
     type: "Homes & Villas",
   },
   {
-    image: "../../public/Images/propertyList/cartImage5.png",
+    image: cartImage5,
     header: "For Rent",
     title: "Brick Lane Realty",
     location: "210 Montreal Road, Canada",
@@ -102,7 +112,7 @@ export const propertyList = [
     type: "Apartment",
   },
   {
-    image: "../../public/Images/propertyList/cartImage6.png",
+    image: cartImage6,
     header: "For Sale",
     title: "Banyon Tree Realty",
     location: "210 Zirak Road, Canada",
@@ -111,44 +121,50 @@ export const propertyList = [
   },
 ];
 
+import exploreLocationImage1 from "../../public/Images/explore/exploreLocation1.png";
+import exploreLocationImage2 from "../../public/Images/explore/exploreLocation2.png";
+import exploreLocationImage3 from "../../public/Images/explore/exploreLocation3.png";
+import exploreLocationImage4 from "../../public/Images/explore/exploreLocation4.png";
+import exploreLocationImage5 from "../../public/Images/explore/exploreLocation5.png";
+import exploreLocationImage6 from "../../public/Images/explore/exploreLocation6.png";
 export const locationData = [
   {
-    image: "../../public/Images/explore/exploreLocation1.png",
+    image: exploreLocationImage1,
     title: "New Orleans, Louisiana",
     peragraph1: "12 Villas",
     peragraph2: "07 Offices",
     peragraph3: "10 Apartments",
   },
   {
-    image: "../../public/Images/explore/exploreLocation2.png",
+    image: exploreLocationImage2,
     title: "Jerrsy, United State",
     peragraph1: "07 Villas",
     peragraph2: "10 Offices",
     peragraph3: "Apartments 9",
   },
   {
-    image: "../../public/Images/explore/exploreLocation3.png",
+    image: exploreLocationImage3,
     title: "Liverpool, London",
     peragraph1: "Villas 08",
     peragraph2: "Offices 7",
     peragraph3: "Apartments 11",
   },
   {
-    image: "../../public/Images/explore/exploreLocation4.png",
+    image: exploreLocationImage4,
     title: "NewYork, United States",
     peragraph1: "Villas 07",
     peragraph2: "Offices 15",
     peragraph3: "Apartments 3",
   },
   {
-    image: "../../public/Images/explore/exploreLocation5.png",
+    image: exploreLocationImage5,
     title: "Montreal, Canada",
     peragraph1: "Villas 11",
     peragraph2: "Offices 06",
     peragraph3: "Apartments 09",
   },
   {
-    image: "../../public/Images/explore/exploreLocation6.png",
+    image: exploreLocationImage6,
     title: "California, USA",
     peragraph1: "Villas 06",
     peragraph2: "Offices 04",
@@ -156,40 +172,45 @@ export const locationData = [
   },
 ];
 
+import agentImage1 from "../../public/Images/agent/agent1.jpg";
+import agentImage2 from "../../public/Images/agent/agent2.jpg";
+import agentImage3 from "../../public/Images/agent/agent3.jpg";
+import agentImage4 from "../../public/Images/agent/agent4.jpg";
+import agentImage5 from "../../public/Images/agent/agent5.jpg";
 export const agentList = [
   {
     heading: "50 Listings",
-    image: "../../public/Images/agent/agent1.jpg",
+    image: agentImage1,
     address: "Liverpool, Canada",
     userName: "Sargam S. Singh",
   },
   {
     heading: "65 Listings",
-    image: "../../public/Images/agent/agent2.jpg",
+    image: agentImage2,
     address: "Montreal, Canada",
     userName: "Harijeet M. Siller",
   },
   {
     heading: "70 Listings",
-    image: "../../public/Images/agent/agent3.jpg",
+    image: agentImage3,
     address: "Denever, USA",
     userName: "Anna K. Young",
   },
   {
     heading: "30 Listings",
-    image: "../../public/Images/agent/agent4.jpg",
+    image: agentImage4,
     address: "2272 Briarwood Drive",
     userName: "Michael P. Grimaldo",
   },
   {
     heading: "60 Listings",
-    image: "../../public/Images/agent/agent5.jpg",
+    image: agentImage5,
     address: "Bangladesh , Dhaka",
     userName: "Likhon Islam",
   },
   {
     heading: "60 Listings",
-    image: "../../public/Images/agent/agent5.jpg",
+    image: agentImage5,
     address: "Bangladesh , Dhaka",
     userName: "Likhon Islam",
   },
