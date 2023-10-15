@@ -2,6 +2,7 @@ import React from "react";
 
 import "./footer.css";
 import { footerData } from "../../data/data";
+import footerImage from "../../../public/Images/logo-light.png"
 const Footer = () => {
   return (
     <div className="footerContainer">
@@ -19,7 +20,7 @@ const Footer = () => {
       <div className="mainFooter">
         <div className="mainFooterContant">
           <div className="leftSidebar">
-            <img src="../../public/Images/logo-light.png" alt="Logo" />
+            <img src={footerImage} alt="Logo" />
             <h3>Do You Need Help With Anything?</h3>
             <p>
               Receive updates, hot deals, tutorials,sent straignt in
