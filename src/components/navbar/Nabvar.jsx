@@ -18,7 +18,7 @@ const Navbar = () => {
             {navbar.map((navItem, index) => {
               const { name, url } = navItem;
               return (
-                <li key={index}>
+                <li key={index} onClick={() => setClick(!click)}>
                   <NavLink to={url} activeclassname="active">
                     {name}
                   </NavLink>
