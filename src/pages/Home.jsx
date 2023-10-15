@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero/Hero";
+import Hero from "../components/hero/Hero";
 import Features from "../components/features/Features";
 import PropertyList from "../components/propertyList/PropertyList";
 import Awards from "../components/awards/Awards";
@@ -16,7 +16,7 @@ const Home = () => {
       <Awards />
       <Location />
       <Agent />
-      <Pacage/>
+      <Pacage />
     </div>
   );
 };
