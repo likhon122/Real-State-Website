@@ -1,0 +1,91 @@
+.feature {
+  background-color: #f7f9fc;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  z-index: 3;
+}
+.heading h2 {
+  margin-top: 50px;
+  color: #000000;
+  font-size: 30px;
+}
+.heading p {
+  color: #000000;
+}
+.featureCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding-bottom: 30px;
+}
+.featureCard div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px 0 rgba(112, 121, 138, 0.18);
+  padding: 20px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.featureCard div img {
+  width: 100%;
+  max-width: 55px;
+}
+.featureCard div h3 {
+  margin-top: 4px;
+  font-size: 17px;
+}
+.featureCard div p {
+  font-size: 14px;
+}
+
+@media screen and (max-width:1250px) {
+  .featureCard div {
+    padding: 15px 13px;
+  }
+  .featureCard div img {
+    max-width: 50px;
+  }
+  .featureCard div h3 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .featureCard div p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:1200px) {
+  .featureCard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width:600px){
+    .featureCard{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container {
+        width: 90%;
+      }
+      .heading h2 {
+        margin-top: 40px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .heading p {
+        color: #000000;
+        font-size: 12px !important;
+        font-weight: 200;
+      }
+}
+@media screen and (max-width: 325px){
+    .featureCard {
+        grid-gap: .5rem;
+      }
+    .container {
+        width: 95%;
+      }
+}

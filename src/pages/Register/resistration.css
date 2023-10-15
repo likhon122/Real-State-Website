@@ -1,0 +1,113 @@
+.main {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.formDiv {
+  background-color: #d6eaf8;
+  padding: 0 25px;
+  border-radius: 8px;
+  width: 450px;
+}
+.Logo h3 {
+  text-align: center;
+  color: #5b2c6f;
+  font-size: 35px;
+  margin: 10px 0 8px;
+}
+.formStart {
+  border-top: 2px solid #5b2c6f;
+}
+.formStart form {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-block: 5px;
+}
+.formInput label {
+  color: rgba(0, 0, 0, 0.496);
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.formInput input {
+  font-size: 18px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.496);
+}
+
+.buttons {
+  margin: 0 auto;
+}
+.buttons button {
+  padding: 9px 60px;
+  border-radius: 10px;
+  background-color: #5b2c6f;
+  color: #d6eaf8;
+  border: 1px solid #5b2c6f;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.buttons button:hover {
+  background-color: transparent;
+  color: #5b2c6f;
+}
+span {
+  color: #ff0000;
+  margin-top: 3px;
+  display: none;
+}
+
+.formInput input:invalid[focusd="true"]{
+  border: 1px solid #ff0000;
+}
+.formInput input:invalid[focusd = "true"] ~ .span {
+  display: block;
+}
+.icon{
+  background-color: #ff0000;
+  position: relative;
+}
+.icon2{
+  position: absolute;
+  right: 10px;
+  top: -24px;
+  cursor: pointer;
+}
+
+@media (max-width: 474px) {
+  .formDiv {
+    padding: 0 25px;
+    width: 350px;
+  }
+}
+@media (max-width: 374px) {
+  .formDiv {
+    padding: 0 15px;
+    width: 290px;
+  }
+  .formInput input {
+    font-size: 15px;
+  }
+}
+@media (max-width: 300px) {
+  .formDiv {
+    padding: 0 15px;
+    width: 260px;
+  }
+  .formInput input {
+    font-size: 13px;
+  }
+}

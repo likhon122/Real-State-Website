@@ -1,0 +1,163 @@
+.PlanPacageContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  grid-gap: 1.5rem;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.plan {
+  padding: 15px;
+  box-shadow: 0 0 20px 0 rgba(112, 121, 138, 0.18);
+  border-radius: 7px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.plan:hover {
+  transform: scale(1.1);
+}
+.topTitle {
+  position: relative;
+  top: -15px;
+  left: -15px;
+  background-color: rgba(255, 140, 0, 0.489);
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+.planHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.planHeading h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.planHeading p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.planBody {
+  margin: auto;
+  width: 90%;
+  padding-top: 15px;
+}
+.planBody ul {
+  list-style: none;
+}
+.planBody li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+  gap: 10px;
+}
+.planBody ul li i {
+  background-color: rgba(0, 128, 0, 0.618);
+  padding: 3px 4px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.planBody ul li .fa-xmark {
+  background-color: rgba(255, 0, 0, 0.749);
+  opacity: 0.8;
+}
+.planBody ul li p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.planFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.plan .planFooter button {
+  background-color: #1e8449;
+  padding: 8px 26px;
+  border: 1px solid #1e8449;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.plan:nth-child(1) .planFooter button {
+  background-color: transparent;
+  color: #1e8449;
+}
+.plan:nth-child(1) .planFooter button:hover {
+  background-color: #1e8449;
+  color: #ffffff;
+}
+.plan:nth-child(2) .planFooter button:hover {
+  background-color: transparent;
+  color: #1e8449;
+}
+.plan:nth-child(3) .planFooter button {
+  background-color: transparent;
+  color: #1e8449;
+}
+.plan:nth-child(3) .planFooter button:hover {
+  background-color: #1e8449;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1069px) {
+  .planBody li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    gap: 8px;
+  }
+  .planBody ul li p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 906px) {
+  .planBody li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    gap: 6px;
+  }
+  .planBody ul li p {
+    font-size: 11px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 844px) {
+  .plans {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));;
+  }
+}
+@media screen and (max-width: 557px) {
+  .PlanPacageContainer {
+    width: 95%;
+  }
+  .plans {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+@media screen and (max-width: 463px) {
+  .plans {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
+  .plan {
+    transition: 00s;
+  }
+  .plan:hover {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,143 @@
+.awards {
+  background-color: #002347;
+}
+.AwardContainer {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  font-size: 80%;
+}
+.awardsHeading {
+  margin-top: -20px;
+  text-align: center;
+}
+.awardsHeading h3 {
+  color: #ffffff;
+  font-size: 30px;
+}
+.awardsHeading h4 {
+  color: #ffffffb9;
+}
+.rewardsCenterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rewardsOverView {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px 50px 0px;
+}
+.rewardsOverView div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: -10px;
+}
+.rewardsOverView div i {
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+  border-radius: 4% 30%;
+  background-color: #324e6b;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffffb0;
+}
+.rewardsOverView div h1 {
+  color: #ffffff;
+}
+.rewardsOverView div p {
+  color: #ffffffb9;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .AwardContainer {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 938px) {
+  .awardsHeading h3 {
+    font-size: 25px;
+  }
+  .awardsHeading h4 {
+    font-size: 12px;
+  }
+  .rewardsOverView div h1 {
+    font-size: 20px;
+  }
+  .rewardsOverView div p {
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 741px) {
+  .AwardContainer {
+    font-size: 60%;
+  }
+  .awardsHeading h3 {
+    font-size: 22px;
+  }
+  .awardsHeading h4 {
+    font-size: 11px;
+  }
+  .rewardsOverView div h1 {
+    font-size: 18px;
+  }
+  .rewardsOverView div p {
+    font-size: 11px;
+    font-weight: 200;
+  }
+  .rewardsOverView div i {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 698px) {
+  .awardsHeading {
+    margin-bottom: -15px;
+  }
+  .rewardsOverView {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .rewardsOverView div {
+    margin-top: 20px;
+  }
+  .rewardsOverView div i {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .awardsHeading h3 {
+    font-size: 20px;
+  }
+  .awardsHeading h4 {
+    font-size: 10px;
+  }
+  .rewardsOverView div h1 {
+    font-size: 16px;
+  }
+  .rewardsOverView div p {
+    font-size: 9px;
+    font-weight: 200;
+  }
+  .rewardsOverView div i {
+    height: 50px;
+    width: 50x;
+    line-height: 50px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,117 @@
+.headerText {
+  background: url("../../public/Images/about/aboutPageImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  z-index: -1;
+}
+
+.headerText::after {
+  position: absolute;
+  content: "";
+  height: 40vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.535);
+  z-index: 1;
+}
+
+.aboutheaderText {
+  margin: auto;
+  width: 70%;
+  padding-top: 20vh;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutheaderText h4 {
+  color: #ffffff;
+  margin-top: -15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.aboutheaderText h1 {
+  color: #ffffff;
+}
+.mainAboutSection {
+  overflow: hidden;
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, minMax(0, 1fr));
+  grid-gap: 1rem;
+  padding: 50px 0px;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.rightSide h2 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.rightSide p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.rightSide button {
+  margin-top: 40px;
+  width: 35%;
+  padding: 15px 0px;
+  background-color: #1e8449;
+  font-weight: 400;
+  border: 1px solid #1e8449;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.rightSide button:hover {
+  background-color: transparent;
+  color: #1e8449;
+}
+.leftSide img {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 777px) {
+  .mainAboutSection {
+    display: grid;
+    grid-template-columns: repeat(1, minMax(0, 1fr));
+  }
+}
+@media screen and (max-width: 587px) {
+  .aboutheaderText h4 {
+    font-size: 14px;
+  }
+  .aboutheaderText h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 441px) {
+  .mainAboutSection {
+    width: 95%;
+  }
+  .aboutheaderText h4 {
+    font-size: 12px;
+  }
+  .aboutheaderText h1 {
+    font-size: 18px;
+  }
+  .rightSide button {
+    width: 45%;
+    padding: 13px 0px;
+    font-weight: 300;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,150 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 5px 22px rgb(0 22 84 /10%);
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+}
+.navbar {
+  height: 10vh;
+  padding: 0px 30px;
+}
+.logoPng {
+  width: 100%;
+  max-width: 120px;
+}
+.lists {
+  margin-left: 50px;
+}
+.lists li {
+  margin-right: 10px;
+  list-style: none;
+}
+.lists li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+.lists li a:hover,
+.lists li .active {
+  background-color: #00d062;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.signUp span {
+  padding: 2px 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #00d062;
+  color: #ffffff;
+}
+.signUp button {
+  padding: 10px;
+  background-color: #00d062;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border: none;
+  border: 1px solid #00d062;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.signUp button:hover {
+  background-color: #ffffff;
+  color: #00d062;
+}
+.barIcon {
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .barIcon {
+    display: block;
+  }
+  .lists {
+    position: absolute;
+    top: 60px;
+    flex-direction: column;
+    background-color: #00d062;
+    width: 100%;
+    right: 0;
+    color: #ffffff;
+    padding: 20px;
+    transition: all 0.4s ease-in-out;
+  }
+  .lists li {
+    margin: 10px 0;
+  }
+  .lists li:first-child {
+    margin-top: -4px;
+  }
+  .lists li:last-child {
+    margin-bottom: -4px;
+  }
+  .lists li a {
+    color: #ffffff;
+  }
+  .lists li a:hover,
+  .lists li .active {
+    border-radius: 3px;
+    color: #000000;
+  }
+  .barIcon {
+    right: 0;
+    padding-right: 30px;
+  }
+  .fa-bars {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  .fa-xmark {
+    transform: rotate(360deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  .showHide {
+    top: -500%;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logoPng {
+    max-width: 100px;
+  }
+  .barIcon {
+    padding-right: 20px;
+  }
+  .signUp button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .signUp span {
+    padding: 1px 7px;
+    margin-right: 6px;
+  }
+}
+@media screen and (max-width: 372px) {
+  .logoPng {
+    max-width: 80px;
+  }
+  .barIcon {
+    padding-right: 10px;
+  }
+  .signUp button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .signUp span {
+    padding: 1px 7px;
+    margin-right: 6px;
+    margin-right: -5px;
+  }
+}

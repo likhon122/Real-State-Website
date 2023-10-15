@@ -1,0 +1,225 @@
+.LocationContainer {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+}
+.locationCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.locationImages {
+  box-shadow: 0px 0px 10px 0px rgba(112, 121, 138, 0.18);
+  transition: 0.5s;
+  position: relative;
+}
+.locationImages:hover {
+  box-shadow: 0px 0px 30px 0px rgba(112, 121, 138, 0.38);
+}
+.locationImages .image img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.locationImages .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  height: 210px;
+  width: 100%;
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.locationImages .overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px;
+  width: 254px;
+  height: 130px;
+  background-color: rgba(15 28 47 / 30%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.locationImages .overlay h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -15px;
+}
+.locationImages .overlay div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.locationImages .overlay div p {
+  font-size: 13px;
+  color: #ffffffc4;
+}
+
+@media screen and (max-width: 1150px) {
+  .locationImages .overlay {
+    height: 200px;
+  }
+  .locationImages .overlay::after {
+    margin: 18px;
+    margin-top: 30px;
+    width: 240px;
+    height: 120px;
+  }
+
+  .locationImages .overlay h3 {
+    font-size: 15px;
+    font-weight: 350;
+  }
+  .locationImages .overlay div p {
+    font-size: 11px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 1032px) {
+  .locationImages .overlay::after {
+    margin: 15px;
+    margin-left: 23px;
+    margin-top: 33px;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .locationImages .overlay::after {
+    margin: 13px;
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .locationImages .overlay::after {
+    margin: 5px;
+    margin-top: 15px;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 872px) {
+  .locationCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .locationImages .overlay {
+    height: 200px;
+  }
+  .locationImages .overlay::after {
+    margin: 25px;
+    margin-top: 30px;
+    width: 240px;
+    height: 120px;
+  }
+
+  .locationImages .overlay h3 {
+    font-size: 15px;
+    font-weight: 350;
+  }
+  .locationImages .overlay div p {
+    font-size: 11px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .locationImages .overlay::after {
+    margin: 15px;
+    margin-left: 23px;
+    margin-top: 33px;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 632px) {
+  .locationImages .overlay::after {
+    margin: 5px;
+    margin-top: 15px;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 582px) {
+  .locationCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .locationImages .overlay {
+    height: 250px;
+  }
+  .locationImages .overlay::after {
+    margin: 40px;
+    margin-left: 70px;
+    margin-top: 40px;
+    width: 260px;
+    height: 150px;
+  }
+
+  .locationImages .overlay h3 {
+    font-size: 13px;
+    font-weight: 350;
+  }
+  .locationImages .overlay div p {
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 480px) {
+  .LocationContainer {
+    margin: auto;
+    width: 95%;
+    margin-top: 50px;
+  }
+  .locationImages .overlay {
+    height: 200px;
+  }
+  .locationImages .overlay::after {
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 250px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 347px) {
+  .locationImages .overlay::after {
+    margin: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 200px;
+    height: 110px;
+  }
+}
+@media screen and (max-width: 284px) {
+  .locationImages .overlay::after {
+    margin: 30px;
+    margin-left: 30px;
+    margin-top: 22px;
+    width: 190px;
+    height: 110px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .locationImages .overlay::after {
+    margin: 15px;
+    margin-top: 18px;
+    width: 180px;
+    height: 100px;
+  }
+}

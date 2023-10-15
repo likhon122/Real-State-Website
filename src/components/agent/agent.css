@@ -1,0 +1,172 @@
+.agentSection {
+  background-color: #d3e2dd;
+}
+.AgentContainer {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+}
+.AgentHeading {
+  margin-top: -10px;
+  text-align: center;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+.AgentHeading h3{
+  font-size: 30px;
+}
+.AgentHeading p {
+  margin-bottom: 13px;
+  color: #220b5c6b;
+  font-weight: 200;
+}
+.agets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding-bottom: 35px;
+}
+.agent {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+  transition: 0.4s ease-in-out;
+  padding: 10px;
+  background-color: #f0f8ff;
+  box-shadow: 0 0 20px 0 rgba(16, 19, 18, 0.18);
+  border-radius: 7px;
+}
+.agent:hover {
+  box-shadow: 0 0 20px 0 rgba(16, 19, 18, 0.38);
+}
+.agentHeading p {
+  padding: 7px 20px;
+  font-size: 13px;
+  background-color: rgba(255, 140, 0, 0.489);
+  width: fit-content;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  margin-left: -10px;
+}
+.agentBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.5);
+}
+.agentBody img {
+  width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 7px;
+  border: 2px solid #99e0ebc4;
+}
+.agentBody .address {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.socialId {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 10px 0px;
+}
+.socialId i {
+  background-color: #216182;
+  padding: 6px;
+  border-radius: 50%;
+  color: #f0f8ff;
+  cursor: pointer;
+  border: 1px solid #216182;
+  transition: 0.4s ease-in-out;
+}
+.socialId i:hover {
+  background-color: transparent;
+  color: #216182;
+}
+.agentFooter {
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.agentFooter .meassageButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 9px;
+  background-color: #1e8449;
+  border: 1px solid #1e8449;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.agentFooter .meassageButton:hover {
+  background-color: transparent;
+  color: #1e8449;
+  transition: 0.4s ease-in-out;
+}
+.agentFooter .phoneButton {
+  background-color: transparent;
+  border: 1px solid #1e8449;
+  padding: 5px 9px;
+  color: #1e8449;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: 0.4s ease-in-out;
+}
+.agentFooter .phoneButton:hover {
+  background-color: #1e8449;
+  color: #ffffff;
+}
+
+@media screen and (max-width:1100px) {
+  .agentFooter {
+    width: 70%;
+  }
+  
+}
+@media screen and (max-width:900px) {
+  .agentFooter {
+    width: 80%;
+  }
+  .agets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+@media screen and (max-width:668px) {
+  .agentFooter {
+    width: 90%;
+  }
+  .agets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .AgentContainer {
+    width: 90%;
+  }
+  
+}
+@media screen and (max-width:477px) {
+  .agentFooter {
+    width: 95%;
+  }
+  .agets {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .AgentContainer {
+    width: 95%;
+  }
+  
+}

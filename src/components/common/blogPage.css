@@ -1,0 +1,20 @@
+.BlogPeaderText {
+  background: url("../../public/Images/servicesPageImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  z-index: -1;
+}
+
+.BlogPeaderText::after {
+  position: absolute;
+  content: "";
+  height: 40vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.535);
+  z-index: 1;
+}
