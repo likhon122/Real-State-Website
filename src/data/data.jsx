@@ -31,13 +31,10 @@ export const navbar = [
   },
 ];
 
-
-{/* <a href="https://ibb.co/cgxqRjk"><img src="" alt="about-Page-Image" border="0"></a>
-<a href="https://ibb.co/MD8Lksp"><img src="" alt="about-Page-Story" border="0"></a> */}
-
+import featureImage1 from "../../public/Images/features/featuresImage1.png";
 export const featuredProperty = [
   {
-    image: "public/Images/features/featuresImage1.png",
+    image: featureImage1,
     houseName: "Family House",
     propertyValid: "122 Property",
   },
