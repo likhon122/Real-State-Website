@@ -30,6 +30,11 @@ export const navbar = [
     name: "Contact",
   },
 ];
+
+
+{/* <a href="https://ibb.co/cgxqRjk"><img src="" alt="about-Page-Image" border="0"></a>
+<a href="https://ibb.co/MD8Lksp"><img src="https://i.ibb.co/xSmQqDG/about-Page-Story.jpg" alt="about-Page-Story" border="0"></a> */}
+
 export const featuredProperty = [
   {
     image: "public/Images/features/featuresImage1.png",
